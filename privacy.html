@@ -27,7 +27,7 @@
 <body>
 
 <h1>Política de Privacidad</h1>
-<p class="date">Última actualización: octubre 2026</p>
+<p class="date">Última actualización: noviembre 2026</p>
 
 <div class="section">
   <h2>1. Responsable del tratamiento</h2>
@@ -38,6 +38,7 @@
   <h2>2. Datos que tratamos</h2>
   <p>• Fotografías de tu rostro (y, opcionalmente, del torso/escote) que tomas o seleccionas para el análisis.<br>
   • Tu perfil: edad, tipo de piel, condiciones, objetivos y respuestas del cuestionario, incluido el color natural de tu pelo y de tus ojos.<br>
+  • Puntos de referencia del rostro (coordenadas de ojos, cejas, nariz, labios y contorno) calculados en tu dispositivo a partir de la foto.<br>
   • Datos generados por el análisis (arquetipo, subtono, paletas y recomendaciones).<br>
   • Imágenes generadas a partir de tu foto, en las que se te muestra con distintos colores y cortes de pelo.<br>
   • Las fotos de progreso que añades voluntariamente en Evolución.<br>
@@ -58,8 +59,9 @@
   <h2>5. Proveedores y terceros</h2>
   <p>Para prestar el servicio compartimos datos con proveedores que actúan por cuenta nuestra:<br>
   • Supabase: guarda tu perfil, tus informes y las fotos de progreso que añades en Evolución, en un almacenamiento privado accesible solo mediante URLs firmadas temporales. La foto de tu análisis no se guarda en nuestros servidores: se envía para procesarla y se conserva solo en tu dispositivo.<br>
-  • Google Cloud Vision: detecta en tu foto los puntos de referencia del rostro (ojos, nariz, mentón) para medir proporciones y comprobar la calidad de la imagen.<br>
-  • OpenAI y Google (Gemini): tus fotografías y las respuestas del cuestionario se envían a estos proveedores de inteligencia artificial para el análisis facial y de color. Google (Gemini) genera además las imágenes de vista previa con tus colores y cortes.<br>
+  • Detección facial en tu dispositivo (MediaPipe, de Google): mientras haces la foto, el propio iPhone localiza los puntos de referencia del rostro para guiarte y medir proporciones. Este proceso ocurre en el móvil; solo se envían a nuestros servidores las coordenadas de esos puntos junto con la foto.<br>
+  • Google Cloud Vision: si los puntos del dispositivo no están disponibles, detecta en tu foto los puntos de referencia del rostro (ojos, nariz, mentón) para medir proporciones y comprobar la calidad de la imagen.<br>
+  • OpenAI y Google (Gemini, a través de Google Cloud Vertex AI): tus fotografías y las respuestas del cuestionario se envían a estos proveedores de inteligencia artificial para el análisis facial y de color. Google (Gemini) genera además las imágenes de vista previa con tus colores y cortes. Según sus condiciones para empresas, estos proveedores no usan los datos enviados por su API para entrenar sus modelos.<br>
   • Apple y RevenueCat: gestionan la compra dentro de la app.<br>
   Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo, con las garantías exigidas por la normativa.</p>
 </div>

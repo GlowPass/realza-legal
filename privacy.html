@@ -40,7 +40,7 @@
   • Tu perfil: edad, tipo de piel, condiciones, objetivos y respuestas del cuestionario, incluido el color natural de tu pelo y de tus ojos.<br>
   • Puntos de referencia del rostro (coordenadas de ojos, cejas, nariz, labios y contorno) calculados en tu dispositivo a partir de la foto.<br>
   • Datos generados por el análisis (arquetipo, subtono, paletas y recomendaciones).<br>
-  • Imágenes generadas a partir de tu foto, en las que se te muestra con distintos colores y cortes de pelo.<br>
+  • Imágenes creadas a partir de tu foto: tu foto con telas de distintos colores (hechas en tu dispositivo) y vistas previas de cortes de pelo (generadas con IA).<br>
   • Las fotos de progreso que añades voluntariamente en Evolución.<br>
   • Identificadores técnicos de tu sesión anónima y de tu compra.</p>
 </div>
@@ -61,14 +61,14 @@
   • Supabase: guarda tu perfil, tus informes y las fotos de progreso que añades en Evolución, en un almacenamiento privado accesible solo mediante URLs firmadas temporales. La foto de tu análisis no se guarda en nuestros servidores: se envía para procesarla y se conserva solo en tu dispositivo.<br>
   • Detección facial en tu dispositivo (MediaPipe, de Google): mientras haces la foto, el propio iPhone localiza los puntos de referencia del rostro para guiarte y medir proporciones. Este proceso ocurre en el móvil; solo se envían a nuestros servidores las coordenadas de esos puntos junto con la foto.<br>
   • Google Cloud Vision: si los puntos del dispositivo no están disponibles, detecta en tu foto los puntos de referencia del rostro (ojos, nariz, mentón) para medir proporciones y comprobar la calidad de la imagen.<br>
-  • OpenAI y Google (Gemini, a través de Google Cloud Vertex AI): tus fotografías y las respuestas del cuestionario se envían a estos proveedores de inteligencia artificial para el análisis facial y de color. Google (Gemini) genera además las imágenes de vista previa con tus colores y cortes. Según sus condiciones para empresas, estos proveedores no usan los datos enviados por su API para entrenar sus modelos.<br>
+  • OpenAI y Google (Gemini, a través de Google Cloud Vertex AI): tus fotografías y las respuestas del cuestionario se envían a estos proveedores de inteligencia artificial para el análisis facial y de color. Google (Gemini) genera además las vistas previas de tus cortes de pelo. Según sus condiciones para empresas, estos proveedores no usan los datos enviados por su API para entrenar sus modelos.<br>
   • Apple y RevenueCat: gestionan la compra dentro de la app.<br>
   Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo, con las garantías exigidas por la normativa.</p>
 </div>
 
 <div class="section">
-  <h2>6. Imágenes generadas con IA</h2>
-  <p>Generamos con inteligencia artificial (Google Gemini) imágenes a partir de tu foto en las que se te muestra con distintos colores de prenda y cortes de pelo. Son orientativas y pueden no reflejar con exactitud el resultado real. No las guardamos en nuestros servidores: se envían a tu dispositivo y se almacenan solo en él, fuera de la copia de seguridad de iCloud. Las imágenes generadas por Google incluyen una marca de agua digital invisible (SynthID) que las identifica como creadas con IA.</p>
+  <h2>6. Imágenes de tus colores y cortes</h2>
+  <p>Colores: para mostrarte cómo te sienta cada color, tu propio iPhone recorta tu silueta de la foto y le añade una tela del color y un fondo gris. Se hace en tu dispositivo, sin inteligencia artificial generativa y sin retocar tu cara; para esto tu foto no sale del móvil. Cortes de pelo: generamos con inteligencia artificial (Google Gemini) imágenes a partir de tu foto en las que se te muestra con distintos cortes. Son orientativas y pueden no reflejar con exactitud el resultado real. No las guardamos en nuestros servidores: se envían a tu dispositivo y se almacenan solo en él, fuera de la copia de seguridad de iCloud. Las imágenes generadas por Google incluyen una marca de agua digital invisible (SynthID) que las identifica como creadas con IA.</p>
 </div>
 
 <div class="section">
